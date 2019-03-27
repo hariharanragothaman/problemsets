@@ -32,10 +32,9 @@ def is_prime2(num):
     return True
 
 while num < limit:
-    flag = is_prime1(num)
+    flag = is_prime2(num)
     if flag:
         sum += num 
-    print "The num is: {} and flag is {}".format(num, flag)
     num += 1
 
 print "The final sum is:", sum
