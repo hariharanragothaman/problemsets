@@ -3,8 +3,7 @@ The prime factors of 13195 are 5, 7, 13 and 29.
 What is the largest prime factor of the number 600851475143 ?
 """
 
-#test_num = 600851475143
-test_num = 13195
+test_num = 600851475143
 
 i = 2
 largest_prime_factor = 0
@@ -25,18 +24,17 @@ def check_prime(num):
         i += 6
     return True
 
-# Find all factors
+# Improved method to find all factors
 
-while factor_limit > 2:
-    if test_num % factor_limit == 0:
-        print "The factor is:", factor_limit
-        result = check_prime(factor_limit)
-        if result:
-            largest_prime_factor = factor_limit
-            break
-        else:
-            print "Searching for other factors..."
+def factors(n):
+    return sorted(set(reduce(list.__add__, ([i, n//i] for i in range(1, int(n**0.5) + 1) if n % i == 0))))
 
-    factor_limit = factor_limit-1
+factors = factors(test_num)
+for i, e in reversed(list(enumerate(factors))):
+    if check_prime(e):
+        print "The highest prime factor is:", e
+        break
 
-print "The largest prime factor is:", largest_prime_factor
+
+
+
