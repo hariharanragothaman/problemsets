@@ -5,7 +5,7 @@ default: vsetup
 venv: vsetup
 
 .PHONY: vsetup
-vsetup: requirements.txt
+vsetup: 
 	test -d venv || virtualenv venv
 
 .PHONY: clean
