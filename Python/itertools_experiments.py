@@ -1,7 +1,10 @@
+import itertools as it
+
 """
 Built in functions-learning
 """
 # Zip Function
+# Note: zip returns a tuple
 
 temp_list = ['$', '%', '@']
 num_list = [1, 2, 3]
@@ -31,3 +34,56 @@ For simplicity, assume that the length of the input list is divisible by n.
 For example, if inputs = [1, 2, 3, 4, 5, 6] and n = 2, your function should return [(1, 2), (3, 4), (5, 6)].
 """
 
+n = 2
+nums =  [1, 2, 3, 4, 5, 6]
+print "The initial list is:", nums
+print [nums[i] for i in range(len(nums))]
+
+# Remember the iter stuff  - Super cool to generate multiple iterators
+def better_grouper(nums, n):
+    iters = [iter(nums)]*n
+    return zip(*iters)
+
+result = better_grouper(nums, n)
+print result
+
+
+# Generate even (or) odd numbers
+def gen_even():
+    n = 0 
+    while True:
+        yield n
+        n += 2
+ 
+evens  = gen_even()
+print list(next(evens) for _ in range(5))
+
+# using itertools to do the same thing
+counter  = it.count(start = 4, step=2)
+print list(next(counter) for _ in range(5))
+
+"""
+Generate a fibonacci sequence
+"""
+
+def fib():
+    a,b = 0, 1
+    while True:
+        yield a
+        a, b = b, a+b
+f = fib()
+#print the first 5 digits of a fibonaaci sequence
+print list(next(f) for _ in range(100))
+
+# Convert list to string
+
+n1 = [4, 5, 6]
+n2 = [4, 5, 6]
+string_n1 = ['1', '2', '3']
+
+print n1
+print string_n1
+
+print ''.join(string_n1)
+# To use join -  we have to typecast
+print ''.join(str(i) for i in n1)
