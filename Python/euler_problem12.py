@@ -20,10 +20,3 @@ while num < limit:
         print "The t-number is:", t_num
         break
     num = num+1
-
-"""
-num = 28
-factor = factors(num)
-print factor
-print len(factor)
-"""
