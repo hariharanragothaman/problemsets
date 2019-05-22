@@ -8,6 +8,17 @@ git
 check
 """
 
+
+"""
+cool
+Hey
+yaay
+is
+git
+check
+"""
+
+
 """
 Built in functions-learning
 """
