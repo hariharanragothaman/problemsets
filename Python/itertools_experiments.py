@@ -2,7 +2,6 @@ import itertools as it
 
 """
 is
-a 
 git
 check
 
