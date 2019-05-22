@@ -40,3 +40,7 @@ clean-test:
 .PHONY: distclean
 distclean:
 	git clean -fdX
+
+.PHONY: test
+test:
+	echo "Hello"
