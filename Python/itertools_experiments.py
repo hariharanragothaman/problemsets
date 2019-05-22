@@ -1,6 +1,8 @@
 import itertools as it
 
 """
+fizz
+buzz
 is
 git
 check
