@@ -4,8 +4,6 @@ import itertools as it
 is
 git
 check
-
-
 """
 
 """
