@@ -1,12 +1,14 @@
 import itertools as it
 
 """
-this
+fizz
+buzz
 is
 git
 check
-Hello World
+this
 """
+
 
 """
 Built in functions-learning
