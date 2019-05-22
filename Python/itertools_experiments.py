@@ -1,7 +1,6 @@
 import itertools as it
 
 """
-This
 is
 a 
 git
