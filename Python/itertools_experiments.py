@@ -3,12 +3,9 @@ import itertools as it
 """
 this
 is
-is
 git
 check
-
 Hello World
-
 """
 
 """
