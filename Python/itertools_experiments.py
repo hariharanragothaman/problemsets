@@ -1,6 +1,16 @@
 import itertools as it
 
 """
+This
+is
+a 
+git
+check
+
+
+"""
+
+"""
 Built in functions-learning
 """
 # Zip Function
