@@ -1,25 +1,6 @@
 import itertools as it
 
 """
-fizz
-buzz
-is
-git
-check
-"""
-
-
-"""
-cool
-Hey
-yaay
-is
-git
-check
-"""
-
-
-"""
 Built in functions-learning
 """
 # Zip Function
