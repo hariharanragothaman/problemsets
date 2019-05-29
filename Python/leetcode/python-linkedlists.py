@@ -41,6 +41,11 @@ class SLL():
             curr_node = curr_node.next
         return
 
+class Solution(object):
+    def add_numbers(self, l1, l2):
+
+
+
 
 if __name__ == '__main__':
     n1 = ListNode(2)
