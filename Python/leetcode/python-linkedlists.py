@@ -41,7 +41,6 @@ class SLL():
             curr_node = curr_node.next
         return
 
-class Solution(object):
     def addTwoNumbers(self, l1, l2, c=0):
         """
         Add 2 numbers stored in the form of linked-lists.
