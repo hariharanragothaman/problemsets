@@ -41,11 +41,24 @@ class SLL():
             curr_node = curr_node.next
         return
 
-class Solution(object):
-    def add_numbers(self, l1, l2):
-
-
-
+    def addTwoNumbers(self, l1, l2, c=0):
+        """
+        Add 2 numbers stored in the form of linked-lists.
+        :type l1: ListNode
+        :type l2: ListNode
+        :rtype: ListNode
+        """
+        val = l1.val + l2.val + c
+        c = val // 10
+        ret = ListNode(val % 10 ) 
+        
+        if (l1.next != None or l2.next != None or c != 0):
+            if l1.next == None:
+                l1.next = ListNode(0)
+            if l2.next == None:
+                l2.next = ListNode(0)
+            ret.next = self.addTwoNumbers(l1.next,l2.next, c)
+        return ret
 
 if __name__ == '__main__':
     n1 = ListNode(2)
