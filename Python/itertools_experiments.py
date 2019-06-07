@@ -45,6 +45,8 @@ def better_grouper(nums, n):
     return zip(*iters)
 
 result = better_grouper(nums, n)
+print "Hello Hari"
+
 print result
 
 
