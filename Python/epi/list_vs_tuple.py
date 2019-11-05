@@ -27,15 +27,22 @@ class A():
         """
         return self.x *113 + 119
 
-
-
 if __name__ == '__main__':
     u = A(42)
+    v = A(42)
 
+    # insertion into a set
+    U = (u, )
+    V = (v, )
+    S = set([U])
 
+    print (U in S)
+    print (V in S)
 
+    # Changing the value
+    u.x = 28
 
-
+    print U in S
 
 """
 Learnings:
