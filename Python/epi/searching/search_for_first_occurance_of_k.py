@@ -1,18 +1,19 @@
 class Solution:
-    def searchRange(self, nums: List[int], target: int) -> List[int]:i
+    def searchRange(self, nums, target: int):
         ll = []
         first_occurance = self.search_first_k(nums, target)
         ll.append(first_occurance)
         i = first_occurance
         last_occurance = 0
         while i < len(nums):
-            if A[i] != target:
+            if nums[i] != target:
                 last_occurance = i-1
                 break
+            i += 1
         ll.append(last_occurance)
         return ll
     
-    def search_first_k(self, nums: List[int], target: int)
+    def search_first_k(self, nums, target: int):
         left, right, result = 0, len(nums)-1, -1
         ll = []
         while left <= right:
@@ -47,4 +48,4 @@ if __name__ == '__main__':
 
     s = Solution()
     ll_result = s.searchRange(A, 108)
-    print ll_result
+    print (ll_result)
