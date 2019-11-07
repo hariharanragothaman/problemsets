@@ -7,8 +7,8 @@ class Solution:
         last_occurance = 0
         while i < len(nums):
             if nums[i] != target:
-                last_occurance = i-1
                 break
+            last_occurance = i 
             i += 1
         ll.append(last_occurance)
         return ll
@@ -43,9 +43,10 @@ def search_for_first_k(A, k: int) -> int:
 
 if __name__ == '__main__':
     A = [-14, -10, 2, 108, 108, 243, 285, 285, 285, 401]
+    B = [2,2]
     f_result = search_for_first_k(A, 108)
     print(f_result)
 
     s = Solution()
-    ll_result = s.searchRange(A, 108)
+    ll_result = s.searchRange(B, 2)
     print (ll_result)
