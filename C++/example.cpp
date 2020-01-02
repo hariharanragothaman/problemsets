@@ -1,7 +1,8 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 int main()
 {
-    cout << "This is the beginning" ;
+double d = 4.669;
+printf("My number is %.2f.",d);
 }
+
