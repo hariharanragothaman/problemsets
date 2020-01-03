@@ -9,6 +9,11 @@ Problem: 771: Jewels and Stones
         Letters are case sensitive, so "a" is considered a different type of stone from "A".
 """
 def numJewelsInStones(self, J: str, S: str) -> int:
+    """
+    Python one-liner for this is:
+    return sum(S.count(j) for j in J)
+    """
+
     J_list = [char for char in J]
     S_list = [char for char in S]
     count = 0 
