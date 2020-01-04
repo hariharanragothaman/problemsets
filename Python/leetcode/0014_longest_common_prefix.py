@@ -27,11 +27,16 @@ def longestCommonPrefix(stringList):
 def longestCommonPrefix2(stringList):
     if stringList == None or len(stringList) ==0:
         return ""
+    # Initiating the general scanning.
     for data in range(len(stringList[0])):
-            c = stringList[0][data]
-            for elements in range(1, len(stringList)):
-                if data == (len(stringList[elements])) or stringList[elements][data] != c:
-                    return stringList[0][:data]
+        print("The index in check now is:", data)
+        c = stringList[0][data]
+        print("the prefix control is:", c)
+        for elements in range(1, len(stringList)):
+            # CORE CHECK!
+            if data == (len(stringList[elements])) or stringList[elements][data] != c:
+                print ("Entering the if condition")
+                return stringList[0][:data]
     return stringList[0] if stringList else ""
 
 stringList = ["flower", "flow", "flight"]
