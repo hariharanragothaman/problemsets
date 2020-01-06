@@ -30,5 +30,15 @@ print(result)
 """
 Intelligent concept oriented solution:
     Use a stack!
-
+    As characters from the string are injected into the stack
+    if top of stack; and current character in stream are same; pop the stack!
 """
+
+def removeDuplicates(S):
+    stack = []
+    for i in range(len(S)):
+        if stack and stack[-1] == S[i]:
+            stack.pop()
+        else:
+            stack.append(S[i])
+    return "".join(stack)
