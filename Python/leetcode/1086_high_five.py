@@ -45,6 +45,13 @@ def highFive(items):
 
     ### - Groups items into a dictionary based on the given value in a "list"
     ### - CORE LOGIC
+    """
+    Going through the list, constructing the dictionary:-
+    for this "key"; try to get the value? - If nothing is there []
+                                            If it's there; add it to the list which is id_grades[1]
+    """
+  
+
     for id_grades in grades:
         student_grades[id_grades[0]] = student_grades.get(id_grades[0], []) + [id_grades[1]]
     print ("Converting List to Dictionary; and also grouping elements\n", student_grades)
@@ -54,8 +61,6 @@ def highFive(items):
         result.append([key, average])
 
     return sorted(result, key=lambda x:x[0])
-
-
 
 result = highFive(items)
 print("The result is: \n", result)
