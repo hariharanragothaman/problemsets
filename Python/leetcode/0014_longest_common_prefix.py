@@ -28,12 +28,15 @@ def longestCommonPrefix2(stringList):
     if stringList == None or len(stringList) ==0:
         return ""
     # Initiating the general scanning.
+    # The seed data is the first word in the string
     for data in range(len(stringList[0])):
         print("The index in check now is:", data)
+        # Comparing each letter of the first word; to letter from other words/
         c = stringList[0][data]
         print("the prefix control is:", c)
         for elements in range(1, len(stringList)):
-            # CORE CHECK!
+            # CORE CHECK - CONDITION:
+            # When we reach the end of one string (or) when the comparison fails!
             if data == (len(stringList[elements])) or stringList[elements][data] != c:
                 print ("Entering the if condition")
                 return stringList[0][:data]
@@ -43,3 +46,11 @@ stringList = ["flower", "flow", "flight"]
 result = longestCommonPrefix(stringList)
 result2 = longestCommonPrefix2(stringList)
 print(result2)
+
+
+"""
+Note in above 2 scenarios 
+          time-complexity O(S) - sum of all elements
+          space complexity is O(1)
+If we have n strings of length 'm'; we would have O(mn) 
+"""
