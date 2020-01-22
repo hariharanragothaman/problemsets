@@ -14,6 +14,7 @@ If there is no prefix, return an empty string. "".
 def longestCommonPrefix(stringList):
     print("Function to find the longest common substring")
     prefix_control = list(zip(*stringList))
+    print("The prefix control is: ", prefix_control)
     prefix = ""
     for data in prefix_control:
         if len(set(data)) == 1:
