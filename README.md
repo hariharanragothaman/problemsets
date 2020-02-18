@@ -1,7 +1,7 @@
 This repository contains solutions to problem from euler-project, hackerrank etc.
 
 
-Topics to Cover:
+*Topics to Cover*:
 
 1. Algo & DS 
 2. Networking Protocols
