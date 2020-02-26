@@ -3,7 +3,7 @@ import collections
 class Solution:
     def orangesRotting(self, grid: List[List[int]]) -> int:
         # Core Logic for printing the grid
-        # This is BFS
+        # This is BFS - getting the number of rows and columns
         R = len(grid)
         C = len(grid[0])
 
