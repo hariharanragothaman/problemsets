@@ -37,7 +37,7 @@ class SLL():
     def print_list(self):
         curr_node = self.head
         while curr_node:
-            print curr_node.val
+            print (curr_node.val)
             curr_node = curr_node.next
         return
 
@@ -72,7 +72,7 @@ if __name__ == '__main__':
 
     t1.print_list()
     length = t1.print_length()
-    print "The length is:", length
+    print ("The length is:", length)
 
     n4 = ListNode(5)
     n5 = ListNode(6)
