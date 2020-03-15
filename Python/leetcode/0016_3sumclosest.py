@@ -5,10 +5,10 @@ class Solution:
         mindiff=100000
         res=0
         for i in range(len(num)):
-            left=i+1; right=len(num)-1
+            left = i+1; right=len(num)-1
             while left<right:
-                sum=num[i]+num[left]+num[right]
-                diff=abs(sum-target)
+                sum = num[i]+num[left]+num[right]
+                diff = abs(sum-target)
                 if diff<mindiff: mindiff=diff; res=sum
                 if sum==target: return sum
                 elif sum<target: left+=1

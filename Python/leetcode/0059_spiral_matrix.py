@@ -2,8 +2,6 @@
 Whatte a legendary peice of code
 
 """
-
-
 def generateMatrix(n):
     A = [[0] * n for _ in range(n)]
     i, j, di, dj = 0, 0, 0, 1

@@ -1,14 +1,11 @@
 """
 Problem 14: To find the longest common prefix (LCP):
-
 Write a function to find the longest common prefix strig amongst an array of strings.
 If there is no prefix, return an empty string. "".
 """
 
 # This is a very important problem - It has more than 5 ways of solving
 # We should learn all the possible ways to do this!
-
-
 # Solution1: Pythonic Smart Solution
 
 def longestCommonPrefix(stringList):
@@ -24,7 +21,6 @@ def longestCommonPrefix(stringList):
     return prefix
 
 # Solution2: Traditional Method
-
 def longestCommonPrefix2(stringList):
     if stringList == None or len(stringList) ==0:
         return ""
