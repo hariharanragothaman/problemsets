@@ -1,5 +1,5 @@
 """
-Whatte a legendary peice of code
+Whatte a legendary piece of code
 
 """
 def generateMatrix(n):
@@ -9,7 +9,6 @@ def generateMatrix(n):
         A[i][j] = k + 1
         
         print((i+di)%n, (j+dj)%n)
-
         if A[(i+di)%n][(j+dj)%n]:
             di, dj = dj, -di
         i += di
@@ -18,5 +17,4 @@ def generateMatrix(n):
 
 
 res = generateMatrix(3)
-
 print(" ".join([str(row) for row in res]))
