@@ -1,5 +1,6 @@
 class Solution:
-    def generate(self, numRows: int):
+    @staticmethod
+    def generate(numRows: int):
         pascal = [[1]*(i+1) for i in range(numRows)]
         print(pascal)
         for i in range(numRows):
@@ -11,3 +12,10 @@ class Solution:
 s1 = Solution()
 res = s1.generate(5)
 print(res)
+
+ll  = [1, 1, 2]
+k = 3
+while k:
+    ll.pop()
+    print(ll)
+    k -= 1
