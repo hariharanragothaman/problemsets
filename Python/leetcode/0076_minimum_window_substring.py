@@ -22,26 +22,33 @@ class Solution:
 
         while right < len(s):
             # Add one character from right to the window
-            character = s[r]
+            character = s[right]
             window_counts[character] = window_counts.get(character, 0) + 1
+
             # If the frequency of the current character added
             # equals to the desired count in 't' - ctr, increment formed by 1
             if character in ctr and window_counts[character] == ctr[character]:
                 formed += 1
+
             # NOW WE HAVE TO TRY AND CONTRACT THE WINDOW, till the point it ceases to be desirable
             # Then try to expand?
             while left <= right and formed == required:
-                character = s[l]
-
+                character = s[left]
                 # Save the smallest window
-                if r-l+1 < ans[0]:
-                    ans = (r-l+1, l, r)
+                if right-left+1 < ans[0]:
+                    ans = (right-left+1, left, right)
 
+                window_counts[character] -= 1
+                if character in ctr and window_counts[character] == ctr[character]:
+                    formed -= 1
+                left += 1
 
+            right += 1
 
-
-
-        return "Hello World"
+        if ans[0] == float("-inf"):
+            return ""
+        else:
+            return s[ans[1]:ans[2]+1]
 
 
 if __name__ == '__main__':
