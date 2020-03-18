@@ -48,7 +48,7 @@ class Solution:
         if ans[0] == float("-inf"):
             return ""
         else:
-            return s[ans[1]:ans[2]+1]
+            return s[ans[0]:ans[2]+1]
 
 
 if __name__ == '__main__':
