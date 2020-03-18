@@ -34,4 +34,7 @@ def main():
     print(p.display())
     print(p.get_count())
 
+    # The other way of calling from base class is:
+    # print(super(Peri, self).display())
+
 main()
