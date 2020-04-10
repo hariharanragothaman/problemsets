@@ -17,8 +17,7 @@ class Solution:
         window_counts = {}
         ans = float("inf"), None, None
 
-
-        #ACTUAL LOGIC!
+        # ACTUAL LOGIC!
 
         while right < len(s):
             # Add one character from right to the window
@@ -44,6 +43,8 @@ class Solution:
                 left += 1
 
             right += 1
+
+        print(ans)
 
         if ans[0] == float("-inf"):
             return ""
