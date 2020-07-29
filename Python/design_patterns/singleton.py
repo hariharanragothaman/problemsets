@@ -26,6 +26,6 @@ class Singleton:
 
 if __name__ == '__main__':
     s = Singleton()
-    print s
+    print (s)
     a = Singleton.getInstance()
-    print a
+    print (a)

@@ -22,6 +22,7 @@ class MyBorg(Borg):
 if __name__ == '__main__':
     bg1 = Borg()
     bg2 = Borg()
+    bg3 = Borg()
 
     bg1.state = 'Idle'
     bg2.state = 'Running'
