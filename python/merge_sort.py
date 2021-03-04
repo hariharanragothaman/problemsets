@@ -1,6 +1,3 @@
-"""
-This file explains the concept of Divide and Conquer explicitly.
-"""
 # Considering Merge Sort at the moment.
 
 def merge_sort(nums):
