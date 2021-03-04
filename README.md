@@ -1,1 +1,1 @@
-This repository contains solutions to several problems..
+This repository contains solutions to random online judge problems
